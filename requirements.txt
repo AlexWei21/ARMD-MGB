@@ -1,0 +1,6 @@
+numpy>=1.17   # np.random.default_rng
+pandas
+matplotlib    # plots in medication_exposure.ipynb
+seaborn       # plots in medication_exposure.ipynb
+pyarrow       # optional: Parquet input in data_deduplication.py
+jupyter
