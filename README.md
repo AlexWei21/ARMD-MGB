@@ -97,6 +97,14 @@ Scripts are in `time-to-event-augmented-queries/`.
 
 ---
 
+## Citation
+
+If you use ARMD-MGB, please cite:
+
+> Wei, Z., & Kanjilal, S. (2025). Antibiotic Resistance Microbiology Dataset Mass General Brigham (ARMD-MGB). PhysioNet. RRID:SCR_007345. https://doi.org/10.13026/2r5k-b955
+
+---
+
 ## References
 
 - ARMD-MGB on PhysioNet: <https://physionet.org/content/armd-mgb/>
