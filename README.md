@@ -16,8 +16,7 @@ scripts/
 ├── time-to-event-augmented-queries/   # Prior clinical history features
 ├── labs.{py,R}, vitals.{py,R}         # Laboratory and vital-sign summaries
 ├── implied_susceptibility.py          # Rule-based implied susceptibility
-├── prior_abx_class_subtype_lookup.ipynb
-└── post_pulling/                      # Date shifting, deduplication and conflict filtering
+└── prior_abx_class_subtype_lookup.ipynb
 ```
 
 ---
@@ -68,18 +67,6 @@ Scripts are in `time-to-event-augmented-queries/`.
 | `prior_abx_class_subtype_lookup.ipynb` | Builds a lookup table mapping each antibiotic to its class and subtype. |
 | `time-to-event-augmented-queries/antibiotic_class_exposure.ipynb` | Prior exposure summarized by antibiotic class. |
 | `time-to-event-augmented-queries/antibiotic_subtype_exposure.ipynb` | Prior exposure summarized by antibiotic subtype. |
-
----
-
-## De-identification and Quality Control
-
-| Script | Description |
-|--------|-------------|
-| `post_pulling/data_deduplication.py` | Removes duplicate rows from each table. |
-| `post_pulling/filter_different_patients.py` | Removes culture orders whose accession number was issued to two different patients. |
-| `post_pulling/filter_deid_conflicts.py` | Applies the same check to tables that already carry de-identified IDs. |
-| `post_pulling/filter_multi_encounter_cultures.py` | Removes cultures linked to more than one encounter because their collection time falls inside overlapping encounter windows. |
-| `post_pulling/deidentify_time.py` | Shifts every date by the patient's random offset. Shifted columns carry a `_shifted` suffix. `deidentify_time.ipynb` is the notebook version. |
 
 ---
 

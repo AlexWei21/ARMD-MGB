@@ -21,7 +21,7 @@ analysis/
 
 # Internal inspection and QA code, and utilities not used to build the released tables.
 scripts/inspection_code/
-scripts/post_pulling/deidentify_source_dataset.ipynb
+scripts/post_pulling/
 
 # C extensions
 *.so
